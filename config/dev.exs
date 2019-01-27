@@ -58,7 +58,7 @@ config :satoru, Satoru.Repo,
   pool_size: 10
 
 # Configure slim
-config :satoru, PhoenixSlimExample.Endpoint,
+config :satoru, Satoru.Endpoint,
 live_reload: [
   patterns: [
     ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},

@@ -23,9 +23,11 @@ config :logger, :console,
   metadata: [:user_id]
 
 # User Slim Template
-config :satoru, :template_engines,
-  slim: PhoenixSlime.Engine,
-  slime: PhoenixSlime.Engine
+config :phoenix, :template_engines,
+    slim: PhoenixSlime.Engine,
+    slime: PhoenixSlime.Engine
+
+config :phoenix_slime, :use_slim_extension, true
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
